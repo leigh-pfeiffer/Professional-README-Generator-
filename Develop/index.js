@@ -64,11 +64,11 @@ const questions = [
         message: 'What are the stepts to install ypur project?'
     },
     {
-        type: 'checkbox',
-        name: 'licence',
-        message: 'Choose the licences for your project:',
-        choices: ['MIT', 'GNU GPLv3', 'Apache', 'Mozilla Public', 'GNU AGPLv3','None']
-    },
+        type: 'list',
+        name: 'license',
+        message: 'What kind of license should your project have?',
+        choices: ['APACHE 2.0','BSD 3', 'GPL 3.0', 'MIT', 'None']
+      },
     {
         type: 'input',
         name: 'tests',
@@ -77,27 +77,20 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { 
-    fs.writeToFile(fileName, data, err => {
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
         if (err) throw err;
-        console.log('README complete!');
-    })
-}
+
+        console.log('README has been generated!')
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer
-        .prompt(questions)
-        .then(data => {
-            return generateReadMe(data);
-        })
-        .then(data => {
-            return writeToFile('README.md', data)
-        })
-        .catch(err => {
-            console.log(err);
-        });
-};
-
+    inquirer.prompt(questions)
+    .then(data => {
+        writeToFile("./sample-README.md", generateMarkdown(data));
+    });
+}
 // Function call to initialize app
 init();
