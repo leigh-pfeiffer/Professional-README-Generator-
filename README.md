@@ -14,7 +14,7 @@ You will need to install node.js and inquirer in order to use the application. H
 
 ## Usage
 This can be used to automatically generate a README.md file based on the user input. Link to video showing how to run the application and answer prompts is listed below.
-  * [Video Link]()
+  * [Video Link](https://drive.google.com/file/d/1iQiNncT9zscQfFb97bG9ISlQMGE0uK5i/view)
 
 
 ## License

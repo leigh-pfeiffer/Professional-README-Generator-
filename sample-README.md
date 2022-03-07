@@ -1,10 +1,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  # assdfg
+  # Read Me Generator
   
   ## Description
   
-  cxvx
+  Generating a professional read me generator
   
   ## Table of Contents
   
@@ -18,12 +18,12 @@
   ### Installation
   
   
-  dfadfa
+  install node and then inquirer
   
   
   ### Usage
   
-  dsfsd
+  Use to generate generator
   
   ### License
   
@@ -36,11 +36,11 @@
   ### Tests
   
   
-  sdfsdf
+  
   
   
   ## Questions
   
-  If you have any questions about the repo, please contact me at thfdf.
+  If you have any questions about the repo, please contact me at leigh.pfeiffer@gmail.com.
   
-  You can find more of my work and projects at [rtt](https://github.com/rtt).
+  You can find more of my work and projects at [leigh-pfeiffer](https://github.com/leigh-pfeiffer).
