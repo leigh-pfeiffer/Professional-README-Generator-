@@ -34,7 +34,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'discription',
+        name: 'description',
         message: 'Provide a discription of your project. (Required)',
         validate: gitInput => {
             if (gitInput) {
@@ -71,9 +71,27 @@ const questions = [
       },
     {
         type: 'input',
-        name: 'tests',
+        name: 'test',
         message: ' Provide tests written for your project and how to run them.'
     },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Please provide usage information (Required)',
+        validate: inputUsage => {
+            if (inputUsage) {
+                return true;
+            } else {
+                console.log('Please enter information for usage');
+                return false;
+            }
+        }
+    },
+    {
+        Type: 'input', 
+        name: 'contributing',
+        message: 'List your contributors, if any.'
+    }
 ];
 
 // TODO: Create a function to write README file
